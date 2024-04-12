@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+
+* {
+    box-sizing: border-box;
+    top: 0;
+    left: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --grey: #474545;
+    --second-font: "Open Sans", sans-serif;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+::selection {
+    background-color: white;
+    color: #474545;
+}
+
+header {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:90px;
+    z-index: 1000;
+    margin: 26px 0;
+}
+
+header a {
+    color: white;
+    font-size:22px;
+    text-decoration: none;
+    font-family: var(--second-font);
+    font-weight: 600;
+    text-align: center;
+    letter-spacing:4px;
+    transition: .3s;
+    border-bottom: 2px solid transparent;
+    padding: 4px 0px;
+}
+
+header a:hover {
+    border-bottom: 2px solid #ffffff;
+}
+
+.presentation {
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(0deg, rgba(71,69,69,0) 8%, rgba(71,69,69,1) 100%);
+    display: grid;
+    grid-template-columns: .7fr 1fr;
+    align-items: center;
+    justify-items: center;
+    grid-gap: 5%;
+}
+
+.present-image {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.present-image img {
+    border-radius: 12px;    
+    width: 48%;
+}
+
+.present-text {
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   gap: 28px;
+}
+
+.present-text h2 {
+    color: transparent;
+    font-size: 5rem;
+    -webkit-text-stroke: 1px white;
+    letter-spacing:10px;
+}
+
+.present-text h1 {
+    color: white;
+    font-size: 6rem;
+    letter-spacing:10px;
+}
+
+.present-text h3 {
+    color: transparent;
+    font-size: 4rem;
+    -webkit-text-stroke: 1px white;
+    letter-spacing:6px;
+}
+
+.present-text a {
+    font-family: var(--second-font);
+    color: #2294ff;
+    text-decoration: none;
+    font-size: 30px;
+    letter-spacing: 2px;
+    font-weight: 700;
+    margin-top: 40px;
+    transition: .3s;
+}
+
+.present-text a:hover {
+    transform: translateX(20px);
+}
+
+.presentation i {
+    position:absolute;
+    font-size: 120px;
+    color: var(--grey);
+    bottom: 10px;
+    top: auto;
+    left: auto;
+    opacity: .7;
+    animation: arrow 2s ease infinite;
+}
+
+@keyframes arrow {
+    0% {bottom: 10px;}
+    50% {bottom: 25px;}
+    100%{bottom:10px;}
+}
+
+
+#Acceuil {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+    grid-gap:10px;
+}
+
+.heures {
+    color: #0282f8; 
+}
+
+.acceuil-p1 {
+    margin: 0 12%;
+}
+
+.acceuil-p1 h1 {
+    position: relative;
+    margin-bottom: 40px;
+    color: var(--grey);
+    letter-spacing: 5px;
+    font-size: 80px;
+    text-align: left;
+}
+
+.acceuil-p1 h1:before {
+  content: "";
+  
+}
+
+.acceuil-p1 p{
+    margin-bottom: 15px;
+}
+
+#Acceuil p {
+    font-family:  var(--second-font);
+    font-size: 24px;
+    color: var(--grey);
+    text-align: left;   
+    letter-spacing: 2px;
+}
+
+.acceuil-p2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 100px;
+    max-width: 65%;
+}
+
+.docto {
+    background-color: white;
+    border: 2px solid #4097e1b8;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.272);
+    border-radius: 6px;
+    padding: 40px 70px;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.docto:hover {
+    transform: scale(105%);
+}
+
+
+
+
+
+
+.acceuil-p2 a img {
+    width: 330px;
+}

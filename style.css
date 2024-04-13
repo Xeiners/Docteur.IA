@@ -165,11 +165,12 @@ header a:hover {
 
 .titles {
     position: relative;
-    margin-bottom: 40px;
     color: var(--grey);
     letter-spacing: 5px;
     font-size: 80px;
     text-align: left;
+    text-align: center;
+    margin-bottom: 6%;
 }
 
 .acceuil-p1 p{
@@ -220,11 +221,6 @@ header a:hover {
     width: 100%;
     height: auto;
     margin-bottom: 100px;
-}
-
-.actes-p1 h1 {
-    text-align: center;
-    margin-bottom: 6%;
 }
 
 .boxes {
@@ -282,3 +278,8 @@ header a:hover {
 }
 
 
+
+
+#Informations {
+    margin:13%;
+}

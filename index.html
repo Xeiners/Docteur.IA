@@ -6,51 +6,53 @@
     <title>Allani</title>
     <link rel="stylesheet" href="style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
     
     <header>
         <a href="#Acceuil">Acceuil</a>
         <a href="#Actes">Actes</a>
-        <a href="#">Informations</a>
+        <a href="#Information">Informations</a>
         <a href="#">Contact</a>
     </header>
     
     <div class="presentation">
-        <div class="present-image"> 
+        <div class="present-image" data-aos="fade-right" data-aos-duration="1000">
             <img src="Images/PhotoCouverture.png">
         </div>
         <div class="present-text"> 
-            <h2>Docteur</h2>
-            <h1>Iyadh ALLANI</h1>
-            <h3>Medecin generaliste</h3>
-            <a href="#">Présentation</a>
+            <h2 data-aos="fade-left" data-aos-duration="1000" data-aos-delay="300">Docteur</h2>
+            <h1 data-aos="fade-left" data-aos-duration="1000" data-aos-delay="400">Iyadh ALLANI</h1>
+            <h3 data-aos="fade-left" data-aos-duration="1000" data-aos-delay="500">Medecin generaliste</h3>
+            <a href="#" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="550">Présentation</a>
         </div>
-        <i class='bx bx-chevron-down'></i>
+        <i class='bx bx-chevron-down' data-aos="fade-down" data-aos-duration="1000" data-aos-delay="800"></i>
     </div>
 
     <div id="Acceuil">
-        <div class="acceuil-p1">
-            <h1 class="titles">Acceuil</h1>
-            <p>Médecin généraliste et urgentiste accueille les enfants et les adultes pour un motif de soins médical.</p>
-            <p>Soins continus de <span class="heures">8H30</span> à <span class="heures">15H</span>.</p>
+        <div class="acceuil-p1" >
+            <h1 class="titles" data-aos="fade-up" data-aos-duration="1000" >Acceuil</h1>
+            <p data-aos="fade-up" data-aos-duration="500" data-aos-delay="100">Médecin généraliste et urgentiste accueille les enfants et les adultes pour un motif de soins médical.</p>
+            <p data-aos="fade-up" data-aos-duration="500" data-aos-delay="100">Soins continus de <span class="heures">8H30</span> à <span class="heures">15H</span>.</p>
         </div>
         <div class="acceuil-p2">
-            <p>Pour prendre <span class="heures">rendez-vous </span> en Téléconsultation Visio ou en cabinet.</p>
-            <a href="https://www.doctolib.fr/medecin-generaliste/barbezieux-saint-hilaire/iyadh-allani/booking/telehealth-suggestion?specialityId=2&bookingFunnelSource=profile" target="_blank"><button class="docto"><img src="Images/Doctolib-logo.png" alt="Doctolib-logo"></button></a>
+            <p data-aos="fade-up" data-aos-duration="500">Pour prendre <span class="heures">rendez-vous </span> en Téléconsultation Visio ou en cabinet.</p>
+            <a data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100" href="https://www.doctolib.fr/medecin-generaliste/barbezieux-saint-hilaire/iyadh-allani/booking/telehealth-suggestion?specialityId=2&bookingFunnelSource=profile" target="_blank"><button class="docto"><img src="Images/Doctolib-logo.png" alt="Doctolib-logo"></button></a>
         </div> 
     </div>
 
+
     <div id="Actes">
-        <div class="actes-p1">
+        <div class="actes-p1" data-aos="fade-up" data-aos-duration="800">
             <h1 class="titles">Actes réalisés</h1>
         </div>
 
-        <div class="actes-p2">
+        <div class="actes-p2" >
 
             <!-- BOX - 1 -->
             
-            <div class="boxes">
+            <div class="boxes" data-aos="zoom-in" data-aos-duration="1000">
                 <div class="box-image">
                     <img src="Images/box1.jpg" alt="box-image">
                 </div>
@@ -66,7 +68,7 @@
 
              <!-- BOX - 2 -->
             
-             <div class="boxes">
+             <div class="boxes" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="100">
                 <div class="box-image">
                     <img src="Images/box2.avif" alt="box-image">
                 </div>
@@ -82,7 +84,7 @@
 
              <!-- BOX - 3 -->
             
-             <div class="boxes">
+             <div class="boxes" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="200">
                 <div class="box-image">
                     <img src="Images/box3.jpg" alt="box-image">
                 </div>
@@ -99,7 +101,7 @@
 
             <!-- BOX - 4 -->
             
-            <div class="boxes">
+            <div class="boxes" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="300">
                 <div class="box-image">
                     <img src="Images/box4.jpg" alt="box-image">
                 </div>
@@ -116,7 +118,7 @@
 
             <!-- BOX - 5 -->
             
-            <div class="boxes">
+            <div class="boxes" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="400">
                 <div class="box-image">
                     <img src="Images/box5.avif" alt="box-image">
                 </div>
@@ -133,7 +135,7 @@
 
             <!-- BOX - 6 -->
             
-            <div class="boxes">
+            <div class="boxes" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="500">
                 <div class="box-image">
                     <img src="Images/box6.jpg" alt="box-image">
                 </div>
@@ -153,5 +155,19 @@
     </div>
 
 
+    <div id="Informations"> 
+        <h1 class="titles">Informations</h1>
+        <div class="infor-p1"></div>
+        <div class="infor-p2"></div>
+    </div>
+
+
+
+
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
 </body>
 </html>

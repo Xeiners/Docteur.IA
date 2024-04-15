@@ -62,6 +62,7 @@ header a:hover {
     align-items: center;
     justify-items: center;
     grid-gap: 5%;
+    overflow-x: hidden;
 }
 
 .present-image {
@@ -159,7 +160,7 @@ header a:hover {
     margin-bottom: 40px;
     color: var(--grey);
     letter-spacing: 5px;
-    font-size: 80px;
+    font-size: 70px;
     text-align: left;
 }
 
@@ -167,7 +168,7 @@ header a:hover {
     position: relative;
     color: var(--grey);
     letter-spacing: 5px;
-    font-size: 80px;
+    font-size: 68px;
     text-align: left;
     text-align: center;
     margin-bottom: 6%;
@@ -281,5 +282,91 @@ header a:hover {
 
 
 #Informations {
-    margin:13%;
+    position:relative; 
+    width: 100%;
+    padding: 3% 0 1% 0;
+    background: linear-gradient(0deg, rgba(71,69,69,0.1) 0%, rgba(71,69,69,0) 90%);
+}
+
+.info-p1 {
+    display: flex;
+    justify-content: center;
+}
+
+.info-p1 li img {
+    border-radius: 1rem;
+    width:100%;
+    transform: scale(99%);
+}
+.splide__arrow--next {
+    left:auto;
+}
+.splide__pagination {
+    top:auto;
+}
+.splide__arrow svg {
+    fill: #0282f8 !important;
+    height: 5.2em !important;
+    width: 3.2em !important;
+}
+.splide__arrow {
+    background: transparent !important;
+    width: 36px !important;
+}
+.splide__pagination__page.is-active {
+    background: #0282f8 !important;
+}
+.splide__arrow--prev {
+    left: -3em !important;
+} 
+.splide__arrow--next {
+    right: -3em !important;
+}
+
+
+
+
+.info-p2 {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 10% 5%;
+    justify-items: center;
+    align-items: center;
+}
+
+.info-p2 iframe  {
+    /* border-radius: 20px; */
+    border-bottom: 2px solid #0282f8 !important;
+}
+
+.conteneur1 p{
+    font-family: var(--second-font);
+    font-size: 22px;
+    color: var(--grey);
+    text-align: left;
+    letter-spacing: 2px;
+    margin: 20px 0;
+}
+
+.conteneur1 h4, a {
+    font-family: var(--second-font);
+    font-size: 24px;
+    color: #0282f8;
+    text-align: left;
+    letter-spacing: 2px;
+}
+
+.conteneur1 a {
+    text-decoration: none;
+    font-size: 22px;
+}
+
+.conteneur1 span {
+    display: block;
+    height: 1px;
+    opacity: .7;
+    border-radius: 10px;
+    width: 75%;
+    background: var(--grey);
 }

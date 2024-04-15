@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="
+https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
+" rel="stylesheet">
 </head>
 <body>
     
@@ -101,7 +104,7 @@
 
             <!-- BOX - 4 -->
             
-            <div class="boxes" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="300">
+            <div class="boxes" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="100">
                 <div class="box-image">
                     <img src="Images/box4.jpg" alt="box-image">
                 </div>
@@ -118,7 +121,7 @@
 
             <!-- BOX - 5 -->
             
-            <div class="boxes" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="400">
+            <div class="boxes" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="200">
                 <div class="box-image">
                     <img src="Images/box5.avif" alt="box-image">
                 </div>
@@ -135,7 +138,7 @@
 
             <!-- BOX - 6 -->
             
-            <div class="boxes" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="500">
+            <div class="boxes" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="300">
                 <div class="box-image">
                     <img src="Images/box6.jpg" alt="box-image">
                 </div>
@@ -156,9 +159,32 @@
 
 
     <div id="Informations"> 
-        <h1 class="titles">Informations</h1>
-        <div class="infor-p1"></div>
-        <div class="infor-p2"></div>
+        <h1 class="titles" data-aos="fade-up" data-aos-duration="800">Informations</h1>
+        
+        <div class="info-p1" data-aos="zoom-in-up" data-aos-duration="1000">
+
+            <section class="splide" aria-labelledby="carousel-heading">
+                <div class="splide__track">
+                      <ul class="splide__list">
+                          <li class="splide__slide"><img src="Images/Carousel/cabinet1.jpg"></li>
+                          <li class="splide__slide"><img src="Images/Carousel/cabinet1.jpg"></li>
+                          <li class="splide__slide"><img src="Images/Carousel/cabinet1.jpg"></li>
+                      </ul>
+                </div>
+              </section>
+
+        </div>
+        
+        <div class="info-p2">
+            <div class="conteneur1">
+                <h4>Cabinet médical soins non programmés :</h4>
+                <p>22 Boulevard Chanzy, 16300 Barbezieux-Saint-Hilaire</p>
+                <span></span>
+                <p>Numéro de téléphone :</p> 
+                <a href="tel:+330982666118">09 82 666 118</a>
+            </div>
+            <div class="conteneur2"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2797.9070245343905!2d-0.15281578844558266!3d45.47167681296154!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x480065330389c6fb%3A0xa09b5787c2514c47!2sCabinet%20m%C3%A9dical%20soins%20non%20programm%C3%A9s!5e0!3m2!1sfr!2stn!4v1713046028204!5m2!1sfr!2stn" width="600" height="450" style="border:20px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+        </div>
     </div>
 
 
@@ -171,6 +197,21 @@
         AOS.init ({
             once: true,
         });
+      </script>
+    <script src="
+    https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js
+    "></script>  
+    <script>
+        document.addEventListener( 'DOMContentLoaded', function() {
+          var splide = new Splide( '.splide', {
+            width: '60%',
+            type: 'loop',
+            autoplay :true,
+            interval: 4000,
+            gap: "10px",
+          });
+          splide.mount();
+        } );
       </script>
 </body>
 </html>
